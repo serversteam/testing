@@ -41,3 +41,6 @@ chown openemm:openemm /home/openemm/.my.cnf
 # Install Executable Service Manager
 
 ln -s /home/openemm/bin/openemm.sh /usr/local/bin/openemm
+
+cd /usr/local/tomcat/bin
+./startup.sh

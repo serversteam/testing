@@ -36,7 +36,7 @@ RUN echo mysql-server mysql-server/root_password password redhat | debconf-set-s
 RUN echo mysql-server mysql-server/root_password_again password redhat | debconf-set-selections 
 RUN apt-get install -y mysql-server -o pkg::Options::="--force-confdef" -o pkg::Options::="--force-confold" --fix-missing  
 RUN apt-get install -y net-tools --fix-missing  
-ENTRYPOINT service mysql start
+ENTRYPOINT service mysql start && /bin/bash
 #RUN rm -rf /var/lib/apt/lists/*\ \ && 
 COPY app/ /app/
 RUN chmod +x /app/setup.sh
