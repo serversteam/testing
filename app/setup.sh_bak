@@ -1,0 +1,7 @@
+#!bin/bash
+service mysql start 
+#lnstall python-dev python-pip -y
+#pip install MySQL-python
+
+#echo "create database openemm" | mysql -u root -predhat
+#echo "create database openemm_cms" | mysql -u root -predhatn -s /home/openemm/bin/openemm.sh /usr/local/bin/openemm
