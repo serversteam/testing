@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Sites &amp; Actions &gt; Formular - Selbstverwaltung für Empfänger &gt; Formulare &gt; Beispiel Formular: Ändern eines Profils &gt; Formular zum Speichern anlegen</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+   <meta name="description" content="Formular zum Speichern anlegen">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style TYPE="text/css" media="screen"> 
+   body {    
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   </style>
+   
+<style TYPE="text/css" MEDIA="print">
+<!--
+/* Hide navigation links and add space between header
+     and text in the printed version. Not valid for eBooks. */
+#idnav { display:none;	 }
+.topichead { padding: 5px 5px 20px 5px; }
+-->
+</style>   
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "creating_a_form_to_save_data.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<!--ZOOMSTOP-->
+
+<div id="idheader">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin: 0px;">
+  <tr>
+    <td align="left" class="topichead">
+      <p class="crumbs" id="idnav">
+        <a href="sites__actions.htm">Sites &amp; Actions</a> &gt; <a href="forms_-_recipient_management.htm">Formular - Selbstverwaltung für Empfänger</a> &gt; <a href="forms.htm">Formulare</a> &gt; <a href="example_form_for_a_user_profil.htm">Beispiel Formular: Ändern eines Profils</a>&nbsp;&gt;&nbsp;Formular zum Speichern anlegen    
+      </p>
+    </td>
+    <!-- td align="right" width="120" valign="middle" class="topichead" id="idnav">
+        
+        
+          <a href="creating_a_form_to_display_dat.htm" onmouseover="document.images.prev.src='btn_prev_h.gif'" onmouseout="document.images.prev.src='btn_prev_n.gif'">
+          <img name=prev src="btn_prev_n.gif" border=0 alt="Previous page">
+          </a>
+        
+        
+        <a href="example_form_for_a_user_profil.htm" onmouseover="document.images.main.src='btn_home_h.gif'" onmouseout="document.images.main.src='btn_home_n.gif'">
+        <img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview">
+        </a>
+        
+          <a href="calling_up_a_form.htm" onmouseover="document.images.next.src='btn_next_h.gif'" onmouseout="document.images.next.src='btn_next_n.gif'">
+          <img name=next src="btn_next_n.gif" border=0 alt="Next page">
+          </a>
+        
+        
+    </td -->
+  </tr>
+</table>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent">
+  <div id="innerdiv"> 
+  <h5 class="p_Heading5"><span class="f_Heading5">Formular zum Speichern anlegen</span></h5>
+
+  <!--ZOOMRESTART-->
+  <p>Bestätigt ein Empfänger das Formular aus dem letzten Abschnitt mit der Schaltfläche <span style="font-weight: bold; color: #006fb9;">Übernehmen</span>, so wertet ein Skript auf dem OpenEMM-Server die Daten aus den Eingabefeldern aus. Dabei erfasst das Skript sowohl die sichtbaren, als auch die unsichtbaren Felder. Die eingelesenen Daten sollen in der Empfängerdatenbank gespeichert werden. Diese Aufgabe übernimmt ein zweites Formular. Der Name dieses Formulars ist bereits im ersten Formular festgelegt:</p>
+<p class="p_BeispieltextQuelltext"><span class="f_BeispieltextQuelltext">&lt;input type=&quot;hidden&quot; name=&quot;agnFN&quot; value=&quot;ProfilSpeichern&quot;&gt;:</span></p>
+<p>Legen Sie entsprechend ein neues Formular mit dem Namen <span style="font-style: italic;">ProfilSpeichern</span> an:</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:16px"><span style="font-size:11pt; font-family: 'Arial';color:#000000;">1.</span></td><td style="border:none"><span class="f_Zahlen">Klicken Sie in der Navigationsleiste unter </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Formulare</span><span class="f_Zahlen"> auf </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Neues Formular</span><span class="f_Zahlen">. Tragen Sie im Eingabefeld </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Name</span><span class="f_Zahlen"> </span><span class="f_Zahlen" style="font-style: italic;">ProfilSpeichern</span><span class="f_Zahlen"> ein (oder den Namen, den Sie im HTML-Code für das erste Formular gewählt haben). Bei </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Beschreibung</span><span class="f_Zahlen"> tragen Sie kurz ein, dass dieses Formular die Daten eines anderen Formulars übernimmt. Das erleichtert bei vielen Formularen die Zuordnung.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:16px"><span style="font-size:11pt; font-family: 'Arial';color:#000000;">2.</span></td><td style="border:none"><span class="f_Zahlen">Die obere Auswahlliste </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Aktion</span><span class="f_Zahlen"> stellen Sie auf </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Empfänger speichern</span><span class="f_Zahlen"> ein. Diese Aktion haben Sie vorher in Kapitel <a href="creating_a_new_action.htm" class="topiclink">Neue Aktionen anlegen</a> definiert. Falls Sie bei der Definition einen anderen Namen gewählt haben, müssen Sie diesen in der Auswahlliste einstellen.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:16px"><span style="font-size:11pt; font-family: 'Arial';color:#000000;">3.</span></td><td style="border:none"><span class="f_Zahlen">Das Eingabefeld </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Erfolgs-Formular</span><span class="f_Zahlen"> soll im Beispiel nur eine kurze Meldung ausgeben, die die Übernahme der geänderten Daten bestätigt, etwa </span><span class="f_Zahlen" style="font-style: italic;">Ihre Daten wurden gespeichert!</span><span class="f_Zahlen"> Sie können hier natürlich wieder den Text nach Belieben mit HTML-Tags formatieren, oder zusätzlich einen Link auf Ihre Firmen-Homepage setzen.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:16px"><span style="font-size:11pt; font-family: 'Arial';color:#000000;">4.</span></td><td style="border:none"><span class="f_Zahlen">Auch das Eingabefeld </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Fehler-Formular</span><span class="f_Zahlen"> nimmt im Beispiel nur einen kurzen Text auf. In der Praxis sollten Sie hier zumindest eine E-Mail-Adresse oder eine Telefonnummer für Anfragen Ihrer Kunden angeben.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:16px"><span style="font-size:11pt; font-family: 'Arial';color:#000000;">5.</span></td><td style="border:none"><span class="f_Zahlen">Die untere Auswahlliste </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Aktion</span><span class="f_Zahlen"> bleibt im Beispiel auf </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Keine Aktion</span><span class="f_Zahlen"> stehen. Sie könnten hier zum Beispiel dem Empfänger noch eine E-Mail mit den geänderten Daten zusenden. Natürlich müssen Sie die entsprechende Aktion vorher unter der Rubrik </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Aktionen</span><span class="f_Zahlen"> definieren.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: normal;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:16px"><span style="font-size:11pt; font-family: 'Arial';color:#000000;">6.</span></td><td style="border:none"><span class="f_Zahlen">Übergeben Sie das neue Formular mit der Schaltfläche </span><span class="f_Zahlen" style="font-weight: bold; color: #006fb9;">Speichern</span><span class="f_Zahlen"> an den OpenEMM.</span></td></tr></table></div><div class="p_ImageCaption"><div style="margin:0px auto 0px auto;width:940px;padding:0px 0px 0px 0px"><img src="das_formular_speichert_die_geaenderten_empfaengerdaten.png" width="940" height="1023" style="border:none" alt="Abb. 8.7: Das Formular speichert die geänderten Empfängerdaten, die es aus dem vorherigen Formular übernimmt." title="Abb. 8.7: Das Formular speichert die geänderten Empfängerdaten, die es aus dem vorherigen Formular übernimmt." /><p style="text-align:center"><span class="f_ImageCaption">Abb. 8.7: Das Formular speichert die geänderten Empfängerdaten, die es aus dem vorherigen Formular übernimmt.</span></p></div></div>
+
+  <!--ZOOMSTOP-->
+  </div>
+</div>
+
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("/") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4
+).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body>
+</html>
